@@ -23,7 +23,7 @@ const App = props => {
   }
 
   const add = subject => {
-      const _id = tasks[tasks.length - 1]._id + 1;
+      const _id = tasks.length + 1;
       setTasks(
         [
           ...tasks, { _id, subject, status: 0 }
